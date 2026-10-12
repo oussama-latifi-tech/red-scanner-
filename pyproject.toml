@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "redscanner"
+version = "1.0.0"
+description = "Scanner de ports TCP asynchrone en Python avec détection d'hôtes et de services"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "TON NOM" }]
+keywords = ["port-scanner", "network", "security", "asyncio", "cybersecurity"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Security",
+    "Topic :: System :: Networking",
+    "Environment :: Console",
+]
+dependencies = ["rich"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/TON_PSEUDO/red-scanner"
+Issues = "https://github.com/TON_PSEUDO/red-scanner/issues"
+
+[project.scripts]
+redscanner = "redscanner.cli:asyncio_main"
+
+[tool.setuptools.packages.find]
+include = ["redscanner*"]
+
+[tool.setuptools.package-data]
+redscanner = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,47 @@
+{
+  "http": {
+    "ports": [80, 8080],
+    "probes": ["HEAD / HTTP/1.0\r\n\r\n"],
+    "regex": ["^HTTP/\\d\\.\\d\\s+\\d{3}"]
+  },
+  "https": {
+    "ports": [443, 8443],
+    "probes": [],
+    "regex": []
+  },
+  "ssh": {
+    "ports": [22],
+    "probes": [],
+    "regex": ["^SSH-\\d\\.\\d+-"]
+  },
+  "ftp": {
+    "ports": [21],
+    "probes": [],
+    "regex": ["^220[ -].*ftp"]
+  },
+  "smtp": {
+    "ports": [25],
+    "probes": [],
+    "regex": ["^220[ -].*smtp"]
+  },
+  "mysql": {
+    "ports": [3306],
+    "probes": [],
+    "regex": ["mysql_native_password|caching_sha2_password|mariadb|mysql"]
+  },
+  "postgresql": {
+    "ports": [5432],
+    "probes": [],
+    "regex": []
+  },
+  "redis": {
+    "ports": [6379],
+    "probes": [],
+    "regex": []
+  },
+  "telnet": {
+    "ports": [23],
+    "probes": [],
+    "regex": []
+  }
+}
