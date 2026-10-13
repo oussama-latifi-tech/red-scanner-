@@ -24,7 +24,7 @@ N'utilisez cet outil **que sur des systèmes qui vous appartiennent ou pour lesq
 Python 3.10 ou plus récent.
 
 ```bash
-git clone https://github.com/TON_PSEUDO/red-scanner.git
+git clone https://github.com/oussama-latifi-tech/red-scanner-.git
 cd red-scanner
 pip install .
 ```
@@ -32,7 +32,7 @@ pip install .
 Ou directement depuis GitHub :
 
 ```bash
-pip install git+https://github.com/TON_PSEUDO/red-scanner.git
+pip install git+https://github.com/oussama-latifi-tech/red-scanner-.git
 ```
 
 Vérification :
